@@ -32,14 +32,14 @@ the average and typical days
 
 **Calculation of typical day**
 
-Considering that the typical day was defined only as the day that best matches the calculated average day, 
+Considering that the typical day was defined only as the day that best matches the calculated average day, the following process was defined:
 
     def process_similarity(row) -> any:
     row["similarity_co2"] = abs(row["mean_co2"]["self"] - row["mean_co2"]["other"])
     row["similarity_mw"] = abs(row["mean_mw"]["self"] - row["mean_mw"]["other"])
     return row
     
- Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities), the following is used:
+ Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities) from the list created by the aforementioned process,, the following code is used:
  
     'similarity_index = similarity.index(min(similarity))'
  
