@@ -7,8 +7,8 @@
 
 The goal of this assignment was to code a model that meets the Overall System Requirements and uses the following inputs:
 * NYISO fuel-mix generation data for the month of August 2019 (see attached zip file) where the NYISO measures and reports (at 5 minute granularity) fuel-mix generation data for the entire ISO. This data separates electrical generation by the following fuel sources: dual fuel, natural gas, nuclear, other fossil fuels, other renewables, wind, and hydropower. In this home assignment you ought to analyze and gather insights from the NYISO fuel-mix generation data. Note that all data is reported in time-ending format. For example, data at timestamp 12/15/2020 00:10:00 is for the timespan 12/15/2020 00:05:00 to 12/15/2020 00:10:00.
-* Emission factors [metric kgCO2e/kWh] by fuel source:
-  - Dual Fue = 0.444
+* Each of the fuel sources has a corresponding emission factor [metric kgCO2e/kWh] as difined below:
+  - Dual Fuel = 0.444
   - Natural Gas = 0.426
   - Nuclear = 0
   - Other Fossil Fuels = 0.935
