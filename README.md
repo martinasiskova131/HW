@@ -50,7 +50,7 @@ As per requested as a part the assignment, the following tables have been create
 
 * One (1) line plot of total generation for NYISO for the average and typical days (x-axis: timestamp, y-axis: generation). Impose both lines on the same plot.
 
-The Average is displayed in orange and the blue represents the typical day. Notice that the energy generation is closely dependent on the working hours of the day. I suspect that is due to both labor availability and also in the cases of renewables -  outside environmental conditions.
+The average day is displayed in orange and the blue represents the typical day. Notice that the energy generation is closely dependent on the working hours of the day. I suspect that is due to both labor availability and also in the cases of renewables -  outside environmental conditions.
 
 ![Average vs Typical day](AvgVsTypical%20day.png)
 
