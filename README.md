@@ -23,7 +23,7 @@ timestamp for each day within the dataset
 the average and typical days
 
 
-**Technologies**
+**Libraries**
 
 * import pandas as pd
 * import os
