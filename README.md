@@ -72,7 +72,7 @@ Furthermore, from a labor perspective, it would be interesting to look at why th
 
 **Suggestions and future improvements**
 
-In this assignment, I have not been trying the answer the reason why the data is behaving the way it is. I have not imposed any presuppositions. Hence, I am currently only able to display the curve the production of energy follows and which days of the month have generated most/least amount of energy. However, in the future we might want to look at some of the causality or correlations of the data provided and include external factors which might be impacting our data. 
+In this assignment, I have not been trying the answer the reason why the data is behaving the way it is. I have not imposed any presuppositions. Hence, I am currently only able to display the curve that the production of energy follows and which days of the month have generated most/least amount of energy. However, in the future we might want to look at some of the causality or correlations of the data provided and include external factors which might be impacting our data. 
 
 Furthermore, in order to answer more questions regarding the data, one should know the potential usage of this information. For instance, if a company is trying to understand the labor productivity of the energy production, closer at aspects pertaining to that aspect of the data and findings. Adversely, if one is interested in knowing how weather conditions impact renewable energy production- those aspects is what should be further explored. However, without a proper reason why this data is to be analyzed, it is difficult to present the data in a way that is the most efficient and useful to the client.
 
