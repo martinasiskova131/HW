@@ -40,6 +40,7 @@ Considering that the typical day was defined only as the day that best matches t
     return row
     
  Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities), the following is used:
+ 
     'similarity_index = similarity.index(min(similarity))'
  
 
@@ -66,12 +67,9 @@ Due to noise in the data, some of the time stamps have been removed which are re
 ![Heat Map: Total energy generation](HeatMap.png)
 
 
-**Commentary** 
-
 
 **Suggestions and future improvements**
+In this assignment, I have not been trying the answer the reason why the data is behaving the way it is. I have not imposed any presuppositions. However, in the future we might want to look at some of the causality or correlations of the data provided and other, external factors.
 
+For instance, were we to apply this to the the remainder of the year 2019 which looking for impact factors, further considerations ought to be taken in place. For instance, the time of year affects severally the weather conditions which in turn affect the Wind and Hydro production outputs for instance. Hence, when not only looking at this data but analyzing it using econometric models, we could include factors such as rainfall and windspeed as some of the additional controls. Further, we could account for the constraints and productivity of distinct labor hours.
 
-
-
-Launch
