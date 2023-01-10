@@ -64,11 +64,14 @@ The Average is displayed in orange and the blue represents the typical day. Noti
 
 Due to noise in the data, some of the time stamps have been removed which are represented by the black spots in the graph (representing zeros). This noise constituted false time recording e.g. 00:12 min. This may be a measuring or reporting error. If it were to be included, the time stamp could be corrected into turning it into the closest 5 min interval rounding up or rather replacing it with the average in between the two time stamps where it is located. For the sake of transparency of these issues I decided to leave these problematic observations out of the sample for now.
 
+Furthermore, from a labor perspective, it would be interesting to look at why there are distinctive productivity changes. For instance, the output drops severally over the weekends, especially those of 10, 11 as well as 24 and 25 of August. 
+
 ![Heat Map: Total energy generation](HeatMap.png)
 
 
 
 **Suggestions and future improvements**
+
 In this assignment, I have not been trying the answer the reason why the data is behaving the way it is. I have not imposed any presuppositions. However, in the future we might want to look at some of the causality or correlations of the data provided and other, external factors.
 
 For instance, were we to apply this to the the remainder of the year 2019 which looking for impact factors, further considerations ought to be taken in place. For instance, the time of year affects severally the weather conditions which in turn affect the Wind and Hydro production outputs for instance. Hence, when not only looking at this data but analyzing it using econometric models, we could include factors such as rainfall and windspeed as some of the additional controls. Further, we could account for the constraints and productivity of distinct labor hours.
