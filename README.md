@@ -48,7 +48,7 @@ The Average is displayed in orange and the blue represents the typical day. Noti
 
 * Heatmap plot of total generation for NYISO (x-axis: date, y-axis: time of the day, z-axis: power) for the dataset (1 plot)
 
-Due to noise in the data, some of the time stamps have been removed. This noise constituted false time recording e.g. 00:12 min. This may be a measuring or reporting error. If it were to be included, the time stamp could be corrected into turning it into the closest 5 min interval rounding up or rather replacing it with the average in between the two time stamps where it is located. For the sake of transparency of these issues I decided to leave these problematic observations out of the sample for now.
+Due to noise in the data, some of the time stamps have been removed which are represented by the black spots in the graph (representing zeros). This noise constituted false time recording e.g. 00:12 min. This may be a measuring or reporting error. If it were to be included, the time stamp could be corrected into turning it into the closest 5 min interval rounding up or rather replacing it with the average in between the two time stamps where it is located. For the sake of transparency of these issues I decided to leave these problematic observations out of the sample for now.
 
 ![Heat Map: Total energy generation](HeatMap.png)
 
