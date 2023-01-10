@@ -8,27 +8,40 @@
 The goal of this assignment was to code a model that meets the Overall System Requirements and uses the following inputs:
 * NYISO fuel-mix generation data for the month of August 2019 (see attached zip file) where the NYISO measures and reports (at 5 minute granularity) fuel-mix generation data for the entire ISO. This data separates electrical generation by the following fuel sources: dual fuel, natural gas, nuclear, other fossil fuels, other renewables, wind, and hydropower. In this home assignment you ought to analyze and gather insights from the NYISO fuel-mix generation data. Note that all data is reported in time-ending format. For example, data at timestamp 12/15/2020 00:10:00 is for the timespan 12/15/2020 00:05:00 to 12/15/2020 00:10:00.
 * Emission factors [metric kgCO2e/kWh] by fuel source:
-- Dual Fue = 0.444
-- Natural Gas = 0.426
-- Nuclear = 0
-- Other Fossil Fuels = 0.935
-- Other Renewables = 0.256
-- Wind=0
-- Hydro = 0
+  - Dual Fue = 0.444
+  - Natural Gas = 0.426
+  - Nuclear = 0
+  - Other Fossil Fuels = 0.935
+  - Other Renewables = 0.256
+  - Wind=0
+  - Hydro = 0
+
+* Average day NYISO total generation for the given dataset, which shall be calculated by taking the average across each
+timestamp for each day within the dataset
+* Typical day NYISO total generation (the day that best matches the calculated average day)
+* Equivalent carbon emissions (CO2e) associated with the NYISO fuel-mix generation for
+the average and typical days
+
 
 **Technologies**
 
-* Lorem version: 12.3
-* Ipsum version: 2.33
+* import pandas as pd
+* import os
+* import seaborn as sns
+* import matplotlib.pyplot as plt
 
-import pandas as pd
-import os
-import seaborn as sns
-import matplotlib.pyplot as plt
+**Calculation of typical day**
 
-**Code Examples**
+Considering that the typical day was defined only as the day that best matches the calculated average day, 
 
-To generate lorem ipsum use special shortcode: `put-your-code-here`
+    def process_similarity(row) -> any:
+    row["similarity_co2"] = abs(row["mean_co2"]["self"] - row["mean_co2"]["other"])
+    row["similarity_mw"] = abs(row["mean_mw"]["self"] - row["mean_mw"]["other"])
+    return row
+    
+ Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities), the following is used:
+    'similarity_index = similarity.index(min(similarity))'
+ 
 
 **Results** 
 
