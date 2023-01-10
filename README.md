@@ -39,7 +39,7 @@ Considering that the typical day was defined only as the day that best matches t
     row["similarity_mw"] = abs(row["mean_mw"]["self"] - row["mean_mw"]["other"])
     return row
     
- Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities) from the list created by the aforementioned process,, the following code is used:
+ Thereafter, in order to find the day with the minimal lambda distance (to minimize disimilarities) from the list created by the aforementioned process, the following code is used:
  
     'similarity_index = similarity.index(min(similarity))'
  
